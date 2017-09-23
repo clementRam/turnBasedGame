@@ -1,0 +1,109 @@
+body {
+    margin-top: 100px;
+    background-color: floralwhite;
+}
+
+table {
+    background-color: white;
+}
+
+table td {
+    width: 65px;
+    height: 65px;
+}
+
+.perso {
+    width: 100%;
+    height: 100%;
+}
+
+.arme {
+    width: 100%;
+    height: 100%;
+}
+
+.brique {
+    background-image: url("img/brique.png");
+    background-size: 100%;
+}
+
+.info {
+    border: ;
+    padding: 10px 10px 10px 10px;
+}
+
+.info img {
+    width: 50px;
+    float: left;
+    margin: 0 40px 0 0;
+}
+
+.info ul {
+    padding-top: 8px;
+}
+
+.joueur1 {
+    margin-bottom: 200px;
+}
+
+.joueur2 {
+    margin-bottom: 100px;
+}
+
+.green {
+    background-color: rgba(0, 255, 1, 0.1);
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+#combatJoueur1 {
+    margin: 10px 0 0 0;
+}
+
+#combatJoueur2 {
+    margin: 10px 0 0 0;
+}
+
+#fight {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 10px;
+    opacity: 0.4;
+}
+
+#youWin {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    width: 10px;
+    opacity: 0.4;
+}
+
+.armes img {
+    height: 50px;
+}
+
+.armes span {
+    padding-left: 20px;
+}
+
+.vert {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.rouge {
+    color: red;
+}
+
+.fa-info-circle {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}

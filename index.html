@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeu tour par tour</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                    <a class="navbar-brand" href="index.html">Jeu Tour par Tour</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a id='newMap' href="#">Nouvelle partie</a></li>
+                        <li><a id='newMap' class="scroll" href="#regle">Règles du jeu</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="container">
+        <div class='row'>
+            <div class='table-responsive col-md-7 col-sm-12'>
+                <table border='1' id='table'>
+                    <tr id='l1'>
+                        <td id='0'></td>
+                        <td id='1'></td>
+                        <td id='2'></td>
+                        <td id='3'></td>
+                        <td id='4'></td>
+                        <td id='5'></td>
+                        <td id='6'></td>
+                        <td id='7'></td>
+                        <td id='8'></td>
+                        <td id='9'></td>
+                    </tr>
+                    <tr id='l2'>
+                        <td id='10'></td>
+                        <td id='11'></td>
+                        <td id='12'></td>
+                        <td id='13'></td>
+                        <td id='14'></td>
+                        <td id='15'></td>
+                        <td id='16'></td>
+                        <td id='17'></td>
+                        <td id='18'></td>
+                        <td id='19'></td>
+                    </tr>
+                    <tr id='l3'>
+                        <td id='20'></td>
+                        <td id='21'></td>
+                        <td id='22'></td>
+                        <td id='23'></td>
+                        <td id='24'></td>
+                        <td id='25'></td>
+                        <td id='26'></td>
+                        <td id='27'></td>
+                        <td id='28'></td>
+                        <td id='29'></td>
+                    </tr>
+                    <tr id='l4'>
+                        <td id='30'></td>
+                        <td id='31'></td>
+                        <td id='32'></td>
+                        <td id='33'></td>
+                        <td id='34'></td>
+                        <td id='35'></td>
+                        <td id='36'></td>
+                        <td id='37'></td>
+                        <td id='38'></td>
+                        <td id='39'></td>
+                    </tr>
+                    <tr id='l5'>
+                        <td id='40'></td>
+                        <td id='41'></td>
+                        <td id='42'></td>
+                        <td id='43'></td>
+                        <td id='44'></td>
+                        <td id='45'></td>
+                        <td id='46'></td>
+                        <td id='47'></td>
+                        <td id='48'></td>
+                        <td id='49'></td>
+                    </tr>
+                    <tr id='l6'>
+                        <td id='50'></td>
+                        <td id='51'></td>
+                        <td id='52'></td>
+                        <td id='53'></td>
+                        <td id='54'></td>
+                        <td id='55'></td>
+                        <td id='56'></td>
+                        <td id='57'></td>
+                        <td id='58'></td>
+                        <td id='59'></td>
+                    </tr>
+                    <tr id='l7'>
+                        <td id='60'></td>
+                        <td id='61'></td>
+                        <td id='62'></td>
+                        <td id='63'></td>
+                        <td id='64'></td>
+                        <td id='65'></td>
+                        <td id='66'></td>
+                        <td id='67'></td>
+                        <td id='68'></td>
+                        <td id='69'></td>
+                    </tr>
+                    <tr id='l8'>
+                        <td id='70'></td>
+                        <td id='71'></td>
+                        <td id='72'></td>
+                        <td id='73'></td>
+                        <td id='74'></td>
+                        <td id='75'></td>
+                        <td id='76'></td>
+                        <td id='77'></td>
+                        <td id='78'></td>
+                        <td id='79'></td>
+                    </tr>
+                    <tr id='l9'>
+                        <td id='80'></td>
+                        <td id='81'></td>
+                        <td id='82'></td>
+                        <td id='83'></td>
+                        <td id='84'></td>
+                        <td id='85'></td>
+                        <td id='86'></td>
+                        <td id='87'></td>
+                        <td id='88'></td>
+                        <td id='89'></td>
+                    </tr>
+                </table>
+                <img id='fight' src='img/fight.png'>
+                <img id='youWin' src='img/youWin.png'>
+                <div id="regle" class='col-lg-12'>
+                    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                        <h4>Règles du jeu :</h4>
+                        <h5>Déplacement :</h5>
+                        <ul>
+                            <li>Seul les cases vertes sont accessibles, cliquez dessus pour vous déplacer.</li>
+                            <li>Lorsqu'un joueur se déplace sur une arme il récupère les points d'attaque correspondant.</li>
+                            <li>Si vous avez déjà une arme vous échangez avec celle présente sur la case.</li>
+                        </ul>
+                        <h5>Combat :</h5>
+                        <ul>
+                            <li>Un combat est lancé lorsque les deux joueurs sont côte à côte.</li>
+                            <li>Attaque : vous infligez la totalité de vos points d'attaque à votre adversaire.</li>
+                            <li>Défense : vous divisez par 2 l'attaque suivante de votre adversaire.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-5 info'>
+                <div class="joueur1">
+                    <div class='col-sm-6'>
+                        <h2>Joueur 1</h2>
+                    </div>
+                    <div class='col-sm-6'>
+                        <h1 id='vieJoueur1' class='vert'></h1>
+                    </div>
+                    <div class='col-sm-12'>
+                        <img src='img/joueur1.png'>
+                        <ul>
+                            <li>Attaque : <span id='joueur1Att'>10</span></li>
+                        </ul>
+                    </div>
+                    <div id='combatJoueur1' class='col-sm-12'>
+                        <button id='attaquerJ1' class='btn btn-danger'>Attaquer</button>
+                        <button id='defendreJ1' class='btn btn-warning'>Défendre</button>
+                    </div>
+                </div>
+                <div class="joueur2">
+                    <div class='col-sm-6'>
+                        <h2>Joueur 2</h2>
+                    </div>
+                    <div class='col-sm-6'>
+                        <h1 id='vieJoueur2' class='vert'></h1>
+                    </div>
+                    <div class='col-sm-12'>
+                        <img src='img/joueur2.png'>
+                        <ul>
+                            <li>Attaque : <span id='joueur2Att'>10</span></li>
+                        </ul>
+                    </div>
+                    <div id='combatJoueur2' class='col-sm-12'>
+                        <button id='attaquerJ2' class='btn btn-danger'>Attaquer</button>
+                        <button id='defendreJ2' class='btn btn-warning'>Défendre</button>
+                    </div>
+                </div>
+                <div class='col-sm-12 armes'>
+                    <h2>Points d'attaque des armes</h2>
+                    <div class='col-sm-3'>
+                        <img src="img/arme1.png"><span>15</span>
+                    </div>
+                    <div class='col-sm-3'>
+                        <img src="img/arme2.png"><span>20</span>
+                    </div>
+                    <div class='col-sm-3'>
+                        <img src="img/arme3.png"><span>25</span>
+                    </div>
+                    <div class='col-sm-3'>
+                        <img src="img/arme4.png"><span>30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src=objets.js></script>
+    <script src=fonctions.js></script>
+    <script src=js.js></script>
+</body>
+
+</html>
